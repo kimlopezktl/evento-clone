@@ -22,7 +22,9 @@ export default function Header() {
 
   return (
     <header className="flex h-14 items-center justify-between border-b-2 border-b-cream/[7%] px-6 text-sm sm:px-9">
-      <h1 className="uppercase">Evento</h1>
+      <Link href="/" className="uppercase">
+        Event
+      </Link>
       <nav className="h-full">
         <ul className="flex h-full gap-4 sm:gap-6">
           {routes.map((route) => (
