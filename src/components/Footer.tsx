@@ -13,7 +13,7 @@ const routes = [
 ];
 export default function Footer() {
   return (
-    <footer className="mt-auto px-6 sm:px-9 flex items-center justify-between h-16 border-t-cream/[7%] border-t-2 text-xs">
+    <footer className="mt-auto flex h-16 items-center justify-between border-t-2 border-t-cream/[7%] px-6 text-xs sm:px-9">
       <small className="text-xs">
         <Link
           className="flex gap-2"
