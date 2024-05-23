@@ -9,8 +9,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        coffee: "#322C2B",
+        "dark-purple": "#1F2544",
+        pink: "#FFD0EC",
+        purple: "#81689D",
+        accent: "#FF6AC2",
         cream: "#E4C59E",
+        // accent: "#a4f839",
       },
       // backgroundImage: {
       //   "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
