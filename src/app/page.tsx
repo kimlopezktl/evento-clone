@@ -1,5 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 
+const popularCity = [
+  { path: "austin", name: "Austin" },
+  { path: "seattle", name: "Seattle" },
+];
 export default function Home() {
   return (
     <main className="flex h-auto flex-col items-center px-3 pt-36 text-center">
@@ -23,8 +28,11 @@ export default function Home() {
       <section className="flex w-full max-w-[1000px] justify-center gap-6 pt-4 text-sm text-pink/70 sm:text-base">
         <p>Popular: </p>
         <ul className="flex gap-2 font-semibold sm:gap-3">
-          <li>Austin</li>
-          <li>Seattle</li>
+          {popularCity.map((city) => (
+            <li key={city.path}>
+              <Link href={`/events/${city.path}`}>{city.name}</Link>
+            </li>
+          ))}
         </ul>
       </section>
     </main>
