@@ -1,4 +1,4 @@
-import Image from "next/image";
+import SearchEvent from "@/components/SearchEvent";
 import Link from "next/link";
 
 const popularCity = [
@@ -18,13 +18,7 @@ export default function Home() {
         </span>{" "}
         around you
       </h2>
-      <form className="w-full pt-10 sm:w-[600px]">
-        <input
-          className="h-16 w-full rounded-md bg-dark-purple px-5 outline-none ring-accent focus:bg-pink/10 focus:text-dark-purple focus:ring-2"
-          placeholder="Search events in any city..."
-        ></input>
-      </form>
-
+      <SearchEvent />
       <section className="flex w-full max-w-[1000px] justify-center gap-6 pt-4 text-sm text-pink/70 sm:text-base">
         <p>Popular: </p>
         <ul className="flex gap-2 font-semibold sm:gap-3">
