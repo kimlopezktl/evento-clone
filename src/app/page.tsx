@@ -1,5 +1,6 @@
 import SearchEvent from "@/components/SearchEvent";
 import Link from "next/link";
+import H1 from "@/components/H1";
 
 const popularCity = [
   { path: "austin", name: "Austin" },
@@ -8,9 +9,7 @@ const popularCity = [
 export default function Home() {
   return (
     <main className="flex h-auto flex-col items-center px-3 pt-36 text-center">
-      <h1 className="text-4xl font-bold tracking-tighter sm:text-7xl">
-        Find events around you
-      </h1>
+      <H1>Find events around you</H1>
       <h2 className="pt-6 text-lg font-light text-pink/70 sm:text-3xl">
         Browse more than{" "}
         <span className="font-bold italic text-accent underline">
