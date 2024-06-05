@@ -18,7 +18,6 @@ export default function Header() {
   ];
 
   const currentPath = usePathname();
-  console.log({ currentPath });
 
   return (
     <header className="flex h-14 items-center justify-between border-b-2 border-b-cream/[7%] px-6 text-sm sm:px-9">

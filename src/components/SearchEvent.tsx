@@ -8,7 +8,6 @@ export default function SearchEvent() {
 
   const handleSubmitSearch = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log({ e });
 
     router.push(`/events/${search}`);
   };
