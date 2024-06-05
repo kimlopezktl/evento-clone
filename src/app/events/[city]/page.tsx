@@ -13,7 +13,7 @@ export default function EventsPage({ params }: EventsPageProps) {
       <H1>
         {city === "all"
           ? "All Events"
-          : `Events page in${city.charAt(0).toUpperCase() + city.slice(1)}`}
+          : `Events page in ${city.charAt(0).toUpperCase() + city.slice(1)}`}
       </H1>
     </main>
   );
